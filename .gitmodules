@@ -1,0 +1,3 @@
+[submodule "erpc"]
+	path = erpc
+	url = git@github.com:EmbeddedPlanet/erpc.git

@@ -1,0 +1,45 @@
+{
+    "name": "mbed-rpc",
+    "config": {
+	"erpc-threads": {
+	    "help": "Enable multithreading within the erpc library. This allows nested calls (ie: simultaneously handling client/server calls on a dual-mode host). Not currently supported.",
+	    "macro_name": "ERPC_THREADS",
+	    "accepted_values": [0, 4],
+	    "value": 4
+	},
+	"erpc-default-buffer-size" : {
+	    "help": "Change the size of buffers allocated by one of MessageBufferFactory. For RPMsg transport layer, ERPC_DEFAULT_BUFFER_SIZE must be 2^n - 16.",
+	    "macro_name": "ERPC_DEFAULT_BUFFER_SIZE",
+	    "value": 256
+	},
+	"erpc-default-buffers-count": {
+	    "help": "The count of buffers allocated by one of statically allocated messages.",
+	    "macro_name": "ERPC_DEFAULT_BUFFERS_COUNT",
+	    "value": 2
+	},
+	"erpc-noexcept": {
+	    "help": "Disable/enable noexcept support.",
+	    "macro_name": "ERPC_NOEXCEPT",
+	    "accepted_values": [0, 1],
+	    "value": 0
+	},
+	"erpc-nested-calls": {
+	    "help": "Enable (1) when callbacks, or other eRPC functions are called from server implementation of another eRPC call. Nested functions need to be marked as @nested in IDL.",
+	    "macro_name": "ERPC_NESTED_CALLS",
+	    "accepted_values": [0, 1],
+	    "value": 0
+	},
+	"erpc-nested-calls-detection": {
+	    "help": "This serves for locating nested calls in code. Nested calls are calls where inside eRPC function on server side is called another eRPC function (like callbacks).",
+	    "macro_name": "ERPC_NESTED_CALLS_DETECTION",
+	    "accepted_values": [0, 1],
+	    "value": 0
+	},
+	"erpc-message-logging": {
+	    "help": "Enable eRPC message logging code through the eRPC. Can be used for base printing messages, or sending data to another system for data analysis.",
+	    "macro_name": "ERPC_MESSAGE_LOGGING",
+	    "accepted_values": [0, 1],
+	    "value": 0
+	}
+    }
+}
