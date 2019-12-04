@@ -11,14 +11,6 @@ This parent library handles porting it to Mbed and its build system outside of e
 
 It is assumed at this point that you have read erpc overview documentation and have some familiarity with erpc concepts. If you aren't familiar with basic usage of erpc, go and read its documentation first.
 
-### Cloning this repository
-
-This repository uses git submodules to link to the original erpc repo. Therefore, you will have to execute the following to fully clone this repo:
-
-```
-git submodule init && git submodule update --recursive
-```
-
 ### Installing erpc tools
 
 To get started with mbed-rpc, first install the erpc tools that are used to convert interface definition language (IDL) files to the client/server "shim" code. 
