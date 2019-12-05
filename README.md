@@ -11,6 +11,12 @@ This parent library handles porting it to Mbed and its build system outside of e
 
 It is assumed at this point that you have read erpc overview documentation and have some familiarity with erpc concepts. If you aren't familiar with basic usage of erpc, go and read its documentation first.
 
+### Examples
+
+Examples of using this library can be found in this associated repository:
+
+https://github.com/EmbeddedPlanet/ep-oc-example-mbed-rpc
+
 ### Installing erpc tools
 
 To get started with mbed-rpc, first install the erpc tools that are used to convert interface definition language (IDL) files to the client/server "shim" code. 
